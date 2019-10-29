@@ -1,0 +1,226 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+@import "~bootstrap/dist/css/bootstrap.css";
+
+
+p{
+    font-family: 'HelveticaLTStd-Roman';
+    color: #5b5b5b;
+}
+
+h1{
+    font-size: 1rem !important;
+    text-align: center;
+    color: #0FB1D2;
+}
+h2{
+    font-size: 0.8rem !important;
+}
+
+
+
+// CONFIGURACION PopMenu
+
+
+// .popover-arrow.sc-ion-popover-ios:after{
+//     background-color: rgb(255, 255, 255) !important;
+// }
+
+// .popover_class .popover-wrapper.sc-ion-popover-ios .popover-content.sc-ion-popover-ios{
+//     width: 300px !important;
+//     background-color: rgb(255, 255, 255) !important;
+// }
+
+// app-popmenu.popover-viewport.sc-ion-popover-ios ion-list.ios.list-ios.hydrated{
+//     background-color: rgb(255, 255, 255) !important;    
+    
+// }
+// .md.list-md.hydrated{
+//     background-color: rgba(255, 255, 255, 0.5) !important;
+//     padding: 0;
+// }
+// .ios.list-ios.hydrated{
+//     background-color: rgba(255, 255, 255, 0.5) !important;
+//     padding: 0;
+// }
+
+// .sc-ion-popover-ios-h.sc-ion-popover-ios-s.popover_class.ios.hydrated{
+//     background-color: rgba(0, 0, 0, 0.35)
+// }
+
+.md .tituloSeccion{
+    text-align: left;
+    margin-left: -1rem;
+    font-family: 'HelveticaLTStd-Roman';
+    font-weight: normal;
+    color: #0FB1D2;
+    font-size: 1rem;
+}
+.ios .tituloSeccion{
+    text-align: left;
+    margin-left: 1rem !important;
+    font-family: 'HelveticaLTStd-Roman';
+    font-weight: normal;
+    color: #0FB1D2;
+    font-size: 1rem;
+    padding-inline-start: 2rem;
+}
+
+ion-item ion-label{
+    white-space: normal !important;
+}
+
+// ICONOS_MENU_SUBSECCIONES
+.col-auto{
+    width: 150px !important;
+    height: 150px !important;
+    border: 1px solid #0E859E;
+    padding: 0 auto;
+    margin: 0.5rem;
+}
+
+
+img.iconosVarios{
+    max-height: 100px;
+    height: 100px;
+    margin: 5px;
+    width: auto;
+}
+
+p.nombreSeccion{
+    line-height: 15px;
+    margin-top: 0;
+    font-family: 'HelveticaLTStd-Bold';
+    font-size: 0.9rem;
+    color: #0FB1D2;
+}
+
+p.nombreProd{
+    line-height: 15px;
+    margin-top: 5px;
+    font-family: 'HelveticaLTStd-Roman';
+    font-size: 0.9rem;
+    color: #0FB1D2;
+}
+
+p.nota{
+    font-size: 1rem;
+    color: #5b5b5b;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+p.infoLeft{
+    text-align: left;
+    color: #5b5b5b;
+}
+
+p.infoCenter{
+    text-align: center;
+    color: #5b5b5b;
+    margin: 0.7rem;
+}
+
+.btnFormulario{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px;
+}
+
+.whiteSpace {
+    white-space: normal;
+}
+
+
+// Cambio a clases Libreria Boostrap
+.bg-primary {
+    background-color: #ffffff !important;
+}
+
+.card-body {
+    background-color: #ffffff !important;
+    color: #5b5b5b;
+}
+
+.accordion .card{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #e2e2e2 !important;
+}
+.card-header {
+    border-bottom: 1px solid #e2e2e2 !important;
+}
+
+button.btnRubro{
+    color: #0FB1D2;
+    white-space: normal;
+}
+
+
+ion-icon.acordionIcon{
+    color: #0FB1D2;
+}
+
+
+  
+
+
+// ALERTAS (Modal)
+.ios .sc-ion-alert-ios{
+    font-size: 1rem;
+    color: #5b5b5b;
+    text-align: left;
+}
+
+.sc-ion-alert-md{
+    font-style: bold;
+    font-size: 1rem;
+    color: rgb(194, 3, 3);
+}
+
+.ios .alert-title{
+    font-size: 1rem !important;
+    color: #0FB1D2;
+    text-align: left;
+    font-weight: normal;
+}
+
+.md .alert-title{
+    font-size: 1rem !important;
+    color: #0FB1D2;
+}
+
+.ios .alert-button-inner{
+    color: rgb(194, 3, 3);
+    font-weight: normal;
+}
+
+.md .alert-button-inner{
+    text-transform: none;
+}

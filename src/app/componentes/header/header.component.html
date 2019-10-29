@@ -1,0 +1,25 @@
+<ion-header no-border>
+  <ion-toolbar mode="ios">
+
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarPop( $event )">
+        <ion-icon color="primary" name="menu" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <img class="logoPlmHead" src="/assets/images/logoHeader.svg" alt="">
+   
+    <img class="logoPatrocinador" src="/assets/images/logoHeaderNestle.svg" alt="">
+
+    <ion-buttons slot="end">
+      <ion-button routerLink="/push-notificaciones">
+        <ion-icon color="light" slot="icon-only" name="notifications"></ion-icon>
+      </ion-button>
+      
+      <ion-button routerLink="/configuracion">
+        <ion-icon color="light" slot="icon-only" name="settings"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>

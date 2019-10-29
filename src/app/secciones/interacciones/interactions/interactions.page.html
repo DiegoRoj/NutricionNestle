@@ -1,0 +1,37 @@
+<app-header></app-header>
+<app-navigation-header titulo="Interacciones medicamentosas"></app-navigation-header>
+
+<ion-content class="ion-padding">
+
+  <h1 class="nombreProducto">Medicamentos a interaccionar</h1>
+
+  <ion-item class="listaResultadosBusqueda" color="tertiary">
+    <ion-label text-wrap>
+      <ion-buttons slot="primary">
+        <ion-button>
+          <ion-icon slot="icon-only" src="/assets/images/interactions/icono-agregar-medicamentos.svg"></ion-icon>
+        </ion-button>
+        <ion-label style="white-space: pre-wrap;"> Agregar Medicamentos para consultar su interacción</ion-label>
+      </ion-buttons>
+
+
+    </ion-label>
+  </ion-item>
+
+  <ion-list class="bckgrList" color="tertiary" >
+    <ion-item class="listaResultadosBusqueda item-list-opacity"  color="tertiary" >
+      <ion-checkbox slot="start" color="success"></ion-checkbox>
+      <ion-label text-wrap>
+        <ion-text>
+          <h3>Nomre Producto</h3>
+        </ion-text>
+        <ion-text>
+          <p>Forma farma</p>
+        </ion-text>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
+
+<app-interaction-footer></app-interaction-footer>

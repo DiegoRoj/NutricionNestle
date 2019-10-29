@@ -1,0 +1,30 @@
+<app-header></app-header>
+<app-navigation-header titulo="Interacciones medicamentosas"></app-navigation-header>
+
+<ion-content class="ion-padding">
+    <ion-searchbar color="light" placeholder="Medicamento, Sustancia, CIE-10, Laboratorio"></ion-searchbar>
+
+  <div>
+    <ion-list class="bckgrList">
+      <ion-item class="listaResultadosBusqueda item-list-opacity" color="primary">
+        <ion-checkbox slot="start" color="success"></ion-checkbox>  
+        <ion-label>
+            <h3>drug.Brand</h3>
+            <p>drug.PharmaForm</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+  <div>
+    <ion-list class="bckgrList">
+      <ion-item detail class="listaResultadosBusqueda item-list-opacity" color="primary">
+        
+        <ion-label>
+            <h3>drug.Brand</h3>
+            <p>drug.PharmaForm</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
+<app-interaction-footer ></app-interaction-footer>
