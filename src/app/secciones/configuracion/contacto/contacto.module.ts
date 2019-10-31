@@ -6,6 +6,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { ContactoPage } from './contacto.page';
+import { ComponentesModule } from 'src/app/componentes/componentes.module';
+import { PopmenuComponent } from 'src/app/componentes/popmenu/popmenu.component';
 
 const routes: Routes = [
   {
@@ -15,11 +17,15 @@ const routes: Routes = [
 ];
 
 @NgModule({
+  entryComponents: [
+    PopmenuComponent
+  ],
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    ComponentesModule
   ],
   declarations: [ContactoPage]
 })

@@ -1,9 +1,190 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>perfil</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header></app-header>
+<app-navigation-header titulo="Perfil"></app-navigation-header>
 
-<ion-content>
+<ion-content class="ion-padding">
+
+    <p class="nota">Los campos marcados con <ion-text color="danger">*</ion-text> son obligatorios</p>
+    <form>
+        <ion-list class="ion-padding-horizontal">
+            <ion-item color="tertiary">
+                <ion-label class="labelFormReg" mode="ios" position="floating">Nombre: <ion-text color="danger">*
+                    </ion-text>
+                </ion-label>
+                <ion-input type="text" ></ion-input>
+            </ion-item>
+
+            <ion-item color="tertiary">
+                <ion-label class="labelFormReg" mode="ios" position="floating">Apellido paterno: <ion-text
+                        color="danger">*</ion-text>
+                </ion-label>
+                <ion-input type="text" ></ion-input>
+            </ion-item>
+
+            <ion-item color="tertiary">
+                <ion-label class="labelFormReg" mode="ios" position="floating">Apellido materno: <ion-text
+                        color="danger">*</ion-text>
+                </ion-label>
+                <ion-input type="text" ></ion-input>
+            </ion-item>
+
+            <ion-item color="tertiary">
+                <ion-label class="labelFormReg" mode="ios" position="floating">Correo electrónico: <ion-text
+                        color="danger">*</ion-text>
+                </ion-label>
+                <ion-input type="email" ></ion-input>
+            </ion-item>
+
+            <ion-item color="tertiary">
+                <ion-label class="labelFormSelect">Profesión:</ion-label>
+                <ion-select #C cancelText="Cancelar" okText="Ok" mode="ios" 
+                    >
+                    <ion-select-option >
+                        profession.ProfessionName
+                    </ion-select-option>
+                </ion-select>
+            </ion-item>
+
+            <ion-item color="tertiary">
+                <ion-label class="labelFormSelect">Tipo de profesional: <ion-text
+                    color="danger">*</ion-text></ion-label>
+                <ion-select #C cancelText="Cancelar" okText="Ok" mode="ios" >
+                    <ion-select-option>
+                        professionsbyparent.ProfessionName
+                    </ion-select-option>
+                </ion-select>
+            </ion-item>            
+
+            <ion-item color="tertiary">
+                <ion-label class="labelFormSelect">Especialidad:</ion-label>
+                <ion-select #D cancelText="Cancelar" okText="Ok" mode="ios" >
+                    <ion-select-option>
+                        speciality.SpecialityName</ion-select-option>
+                </ion-select>
+            </ion-item>
+
+            <ion-item color="tertiary">
+                <ion-label class="labelFormReg" mode="ios" position="floating">Cédula profesional: <ion-text
+                        color="danger">*</ion-text>
+                </ion-label>
+                <ion-input type="text">
+                </ion-input>
+            </ion-item>
+
+            <ion-item color="tertiary">
+                <ion-label class="labelFormSelect">Subespecialidad:</ion-label>
+                <ion-select #D cancelText="Cancelar" okText="Ok" mode="ios" >
+                    <ion-select-option>
+                        subspeciality.SubspecialityName</ion-select-option>
+                </ion-select>
+            </ion-item>
+
+            <ion-item color="tertiary">
+                <ion-label class="labelFormReg" mode="ios" position="floating">Cédula de la subespecialidad:
+                    <ion-text color="danger">*</ion-text>
+                </ion-label>
+                <ion-input type="text"  placeholder="1234567890">
+                </ion-input>
+            </ion-item>
+
+            <ion-item color="tertiary">
+                <ion-label class="labelFormSelect">País:</ion-label>
+                <ion-select #E cancelText="Cancelar" okText="Ok" mode="ios" >
+                    <ion-select-option>
+                        country.CountryName
+                    </ion-select-option>
+                </ion-select>
+            </ion-item>
+
+            <ion-item color="tertiary">
+                <ion-label class="labelFormSelect">Estado / Departamento / Provincia:</ion-label>
+                <ion-select #F cancelText="Cancelar" okText="Ok" mode="ios" >
+                    <ion-select-option>state.StateName
+                    </ion-select-option>
+                </ion-select>
+            </ion-item>
+
+            <ion-item color="tertiary">
+                <ion-label class="labelFormSelect">Delegación / Municipio:</ion-label>
+
+                <ion-select #G cancelText="Cancelar" okText="Ok" mode="ios" >
+                    <ion-select-option >
+                        location.LocationName
+                    </ion-select-option>
+                </ion-select>
+            </ion-item>
+
+
+            <ion-item color="tertiary">
+                <ion-label class="labelFormReg" mode="ios" position="floating">Teléfono:
+                </ion-label>
+                <ion-input type="tel" ></ion-input>
+            </ion-item>
+
+            <div *ngIf="!updateUser;">
+                <ion-item color="tertiary">
+                    <ion-label class="labelFormReg" mode="ios">Acepto Términos y Condiciones</ion-label>
+                    <ion-checkbox slot="end" checked="false" color="success"></ion-checkbox>
+                </ion-item>
+                <h1>Ver Términos y Condiciones</h1>
+
+                <ion-item color="tertiary">
+                    <ion-label class="labelFormReg" mode="ios">Acepto Aviso de Privacidad</ion-label>
+                    <ion-checkbox slot="end" checked="false" color="success"></ion-checkbox>
+                </ion-item>
+                <h1>Ver Aviso de Privacidad</h1>
+            </div>
+
+            <ion-item color="tertiary"  lines="none">
+                <ion-button class="btnFormulario"
+                color="primary" 
+                expand="block"
+                size="small"
+                mode="ios">Registrar</ion-button>
+        
+                <ion-button class="btnFormulario"
+                color="primary" 
+                expand="block"
+                size="small"
+                mode="ios">Actualizar</ion-button>
+            </ion-item>
+        </ion-list>
+
+        <ion-list lines="none">
+            <ion-item>
+                <h1 class="alert" color="danger">Nombre no puede tener caracteres especiales</h1>
+            </ion-item>
+            <ion-item>
+                <h1 class="alert" color="danger">Apellido paterno no puede tener caracteres especiales </h1>
+            </ion-item>
+            <ion-item>
+                <h1 class="alert" color="danger">Apellido materno no puede tener caracteres especiales </h1>
+            </ion-item>
+            <ion-item>
+                <h1 class="alert" color="danger">Ingrese un email valido</h1>
+            </ion-item>
+            <ion-item>
+                <h1 class="alert" color="danger">La profesión es un dato requerido</h1>
+            </ion-item>
+            <ion-item>
+                <h1 class="alert" color="danger">La cedula profesional es un dato requerido</h1>
+            </ion-item>
+            <ion-item>
+                <h1 class="alert" color="danger">El país es un dato requerido</h1>
+            </ion-item>
+            <ion-item>
+                <h1 class="alert" color="danger">El teléfono debe tener 8 dígitos</h1>
+            </ion-item>
+            <ion-item>
+                <h1 class="alert" color="danger">Debe aceptar los términos y condiciones para continuar</h1>
+            </ion-item>
+            <ion-item>
+                <h1 class="alert" color="danger">Debe aceptar las políticas de privacidad para continuar</h1>
+            </ion-item>
+        </ion-list>
+
+        
+
+    </form>
+
 
 </ion-content>

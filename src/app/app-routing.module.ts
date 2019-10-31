@@ -27,6 +27,7 @@ const routes: Routes = [
   { path: 'perfil', loadChildren: './secciones/configuracion/perfil/perfil.module#PerfilPageModule' },
   { path: 'sugerencias', loadChildren: './secciones/configuracion/sugerencias/sugerencias.module#SugerenciasPageModule' },
   { path: 'ippa', loadChildren: './secciones/nestle/ippa/ippa.module#IppaPageModule' },
+  { path: 'registro', loadChildren: './secciones/registro/registro/registro.module#RegistroPageModule' },
 ];
 
 @NgModule({

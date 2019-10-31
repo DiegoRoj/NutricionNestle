@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PopoverController } from '@ionic/angular';
 
 @Component({
   selector: 'app-popmenu',
@@ -7,8 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PopmenuComponent implements OnInit {
 
-  constructor() { }
+  constructor( private popoverCtrl: PopoverController) { }
 
   ngOnInit() {}
+
+  onClick( valor: number ){
+    
+    console.log('item:', valor);
+
+     this.popoverCtrl.dismiss({
+       item: valor
+     });
+
+  }
 
 }

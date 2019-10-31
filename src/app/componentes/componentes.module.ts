@@ -5,6 +5,7 @@ import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 import { NavigationHeaderComponent } from './navigation-header/navigation-header.component';
 import { InteractionFooterComponent } from './interaction-footer/interaction-footer.component';
+import { PopmenuComponent } from './popmenu/popmenu.component';
 
 
 
@@ -12,12 +13,14 @@ import { InteractionFooterComponent } from './interaction-footer/interaction-foo
   declarations: [
     HeaderComponent,
     NavigationHeaderComponent,
-    InteractionFooterComponent
+    InteractionFooterComponent,
+    PopmenuComponent
   ],
   exports: [
     HeaderComponent,
     NavigationHeaderComponent,
-    InteractionFooterComponent
+    InteractionFooterComponent,
+    PopmenuComponent
   ],
   imports: [
     CommonModule,

@@ -1,9 +1,39 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>configuracion</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header></app-header>
+<app-navigation-header titulo="Configuración"></app-navigation-header>
 
 <ion-content>
+  <div class="container">
 
+    <div class="row justify-content-center ion-text-center">
+      <div class="col-auto" routerLink="/perfil">
+          <img class="iconosVarios" src="./assets/images/iconoPerfil.svg">
+          <p class="nombreSeccion">Pefil</p>
+      </div>
+      <div class="col-auto" routerLink="/push-notificaciones">
+          <img class="iconosVarios" src="./assets/images/iconoNotificaciones.svg">
+          <p class="nombreSeccion">Notificaciones Push</p>
+      </div>
+      <div class="col-auto" routerLink="/">
+          <img class="iconosVarios" src="./assets/images/iconoTerminos.svg">
+          <p class="nombreSeccion">Términos y condiciones</p>
+      </div>
+      <div class="col-auto" routerLink="/sugerencias">
+          <img class="iconosVarios" src="./assets/images/iconoSugerencias.svg">
+          <p class="nombreSeccion">Sugerencias</p>
+      </div>
+      <div class="col-auto" routerLink="/creditos">
+          <img class="iconosVarios" src="./assets/images/iconoCreditos.svg">
+          <p class="nombreSeccion">Créditos</p>
+      </div>
+      <div class="col-auto" routerLink="/contacto">
+          <img class="iconosVarios" src="./assets/images/iconoContacto.svg">
+          <p class="nombreSeccion">Contacto</p>
+      </div>
+      <div class="col-auto" routerLink="/">
+          <img class="iconosVarios" src="./assets/images/iconoAviso.svg">
+          <p class="nombreSeccion">Aviso de Privacidad</p>
+      </div>
+    </div>
+      
+  </div>
 </ion-content>

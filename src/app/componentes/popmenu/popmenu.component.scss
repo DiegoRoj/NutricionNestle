@@ -1,0 +1,31 @@
+ion-list{
+    padding: 0;
+    margin: 0 !important;
+}
+
+ion-label.textItemMenu{
+    color: #0FB1D2;
+    white-space: normal;
+    font-size: 0.9rem !important;
+}
+
+.ios ion-label.textItemMenu{
+    color: #0FB1D2;
+    white-space: normal;
+    font-size: 0.9rem !important;
+    margin: 17px 8px 17px 0;
+}
+
+ion-thumbnail{
+    margin: 0 8px 0 -8px;
+    padding: 0.6rem;
+    height: 100%;
+}
+
+ion-item a.item-native{
+    min-height: 55px !important;
+}
+
+img.logoPopMenu{
+    max-height: 55px;
+}

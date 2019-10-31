@@ -1,3 +1,57 @@
-<p>
-  popmenu works!
-</p>
+<ion-list >
+
+  <ion-item mode="ios" color="tertiary" routerLink="/home" detail="false" (click)="onClick()" style="margin-top:5px !important;">
+    <ion-thumbnail slot="start">
+      <img src="/assets/images/iconoHome.svg"> 
+    </ion-thumbnail>
+    <ion-label class="textItemMenu">Inicio</ion-label>
+  </ion-item>
+  
+  <ion-item mode="ios" color="tertiary" routerLink="/interacciones-medicamentosas" detail="false" (click)="onClick()">
+    <ion-thumbnail slot="start">
+      <img src="/assets/images/iconoInteracciones.svg"> 
+    </ion-thumbnail>
+    <ion-label class="textItemMenu">Interacciones</ion-label>
+  </ion-item>
+  
+  <ion-item mode="ios" color="tertiary" routerLink="/nestle" detail="false" (click)="onClick()">
+    <ion-thumbnail slot="start">
+        <img src="/assets/images/iconNestle.svg"> 
+    </ion-thumbnail>
+      <img class="logoPopMenu" src="/assets/images/iconoTextNestle.svg">
+  </ion-item>
+  
+  <ion-item mode="ios" color="tertiary" routerLink="/contenido-editorial" detail="false" (click)="onClick()">
+    <ion-thumbnail slot="start">
+      <img src="/assets/images/iconoContenidoEditorial.svg"> 
+    </ion-thumbnail>
+    <ion-label class="textItemMenu">Contenido Editorial</ion-label>
+  </ion-item>
+  
+  <ion-item mode="ios" color="tertiary" routerLink="/atlas" detail="false" (click)="onClick()">
+    <ion-thumbnail slot="start">
+      <img src="/assets/images/iconoAtlas.svg"> 
+    </ion-thumbnail>
+    <ion-label class="textItemMenu">Atlas</ion-label>
+  </ion-item>
+
+  <ion-item mode="ios" color="tertiary" routerLink="/herramientas-medicas" detail="false" (click)="onClick()">
+    <ion-thumbnail slot="start">
+      <img src="/assets/images/iconoHerramientasMedicas.svg"> 
+    </ion-thumbnail>
+    <ion-label class="textItemMenu">Herramientas Medicas</ion-label>
+  </ion-item>
+  
+  <ion-item mode="ios" color="tertiary" routerLink="/formulario-solicitud-representante" detail="false" (click)="onClick()">
+    <ion-thumbnail slot="start">
+      <img src="/assets/images/iconoSolicitudRepresentante.svg"> 
+    </ion-thumbnail>
+    <ion-label class="textItemMenu">Solicitud de representante médico</ion-label>
+  </ion-item>
+  
+  
+
+  
+
+
+</ion-list>

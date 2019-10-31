@@ -1,0 +1,34 @@
+<ion-header no-border>
+  <ion-toolbar mode="ios">
+
+      <img class="logoPlmHead" src="/assets/images/logoHeader.svg" alt="">
+
+</ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+<p class="nota">Registro</p>
+
+
+<p class="nota">Los campos marcados con <ion-text color="danger">*</ion-text> son obligatorios</p>
+
+<form padding-right>
+
+  <ion-list>
+    <ion-item color="tertiary">
+      <ion-label class="labelFormReg" mode="ios" position="floating">Correo electrónico:<ion-text color="danger">*</ion-text></ion-label>
+      <ion-input  type="email" required></ion-input>
+    </ion-item>
+  </ion-list>
+    
+    <ion-button class="btnFormulario"
+    color="primary" 
+    expand="block"
+    size="small"
+    mode="ios"
+    routerLink="/perfil">Registrar</ion-button>
+
+</form>
+
+
+</ion-content>

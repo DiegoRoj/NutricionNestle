@@ -8,6 +8,7 @@ import { IonicModule } from '@ionic/angular';
 import { IppaPage } from './ippa.page';
 import { ComponentesModule } from 'src/app/componentes/componentes.module';
 import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
+import { PopmenuComponent } from 'src/app/componentes/popmenu/popmenu.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
+  entryComponents: [
+    PopmenuComponent
+  ],
   imports: [
     CommonModule,
     FormsModule,

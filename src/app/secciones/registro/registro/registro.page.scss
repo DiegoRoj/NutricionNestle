@@ -1,0 +1,31 @@
+ion-header{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,3fc1db+100 */
+    background: rgb(255,255,255); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(63,193,219,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(63,193,219,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(63,193,219,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#3fc1db',GradientType=1 ); /* IE6-9 */
+}
+
+ion-toolbar {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+
+    display: flex;
+    align-items: center;
+    max-height: 44px;
+}
+
+.ios img.logoPlmHead{
+    max-width: 60px;
+    padding-top: 3px;
+    margin-left: 1rem;
+}
+
+.md img.logoPlmHead{
+    max-width: 60px;
+    margin-top: 2px;
+    padding-top: 0;
+    margin-left: 1rem;
+}
+

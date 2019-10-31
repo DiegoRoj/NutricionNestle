@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 
 import { HomePage } from './home.page';
 import { ComponentesModule } from 'src/app/componentes/componentes.module';
+import { PopmenuComponent } from 'src/app/componentes/popmenu/popmenu.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
+  entryComponents: [
+    PopmenuComponent
+  ],
   imports: [
     CommonModule,
     FormsModule,

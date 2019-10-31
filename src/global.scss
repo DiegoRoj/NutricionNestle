@@ -44,34 +44,34 @@ h2{
 
 
 
-// CONFIGURACION PopMenu
+CONFIGURACION PopMenu
 
 
-// .popover-arrow.sc-ion-popover-ios:after{
-//     background-color: rgb(255, 255, 255) !important;
-// }
+.popover-arrow.sc-ion-popover-ios:after{
+    background-color: rgb(255, 255, 255) !important;
+}
 
-// .popover_class .popover-wrapper.sc-ion-popover-ios .popover-content.sc-ion-popover-ios{
-//     width: 300px !important;
-//     background-color: rgb(255, 255, 255) !important;
-// }
+.popover_class .popover-wrapper.sc-ion-popover-ios .popover-content.sc-ion-popover-ios{
+    width: 300px !important;
+    background-color: rgb(255, 255, 255) !important;
+}
 
-// app-popmenu.popover-viewport.sc-ion-popover-ios ion-list.ios.list-ios.hydrated{
-//     background-color: rgb(255, 255, 255) !important;    
+app-popmenu.popover-viewport.sc-ion-popover-ios ion-list.ios.list-ios.hydrated{
+    background-color: rgb(255, 255, 255) !important;    
     
-// }
-// .md.list-md.hydrated{
-//     background-color: rgba(255, 255, 255, 0.5) !important;
-//     padding: 0;
-// }
-// .ios.list-ios.hydrated{
-//     background-color: rgba(255, 255, 255, 0.5) !important;
-//     padding: 0;
-// }
+}
+.md.list-md.hydrated{
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    padding: 0;
+}
+.ios.list-ios.hydrated{
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    padding: 0;
+}
 
-// .sc-ion-popover-ios-h.sc-ion-popover-ios-s.popover_class.ios.hydrated{
-//     background-color: rgba(0, 0, 0, 0.35)
-// }
+.sc-ion-popover-ios-h.sc-ion-popover-ios-s.popover_class.ios.hydrated{
+    background-color: rgba(0, 0, 0, 0.35)
+}
 
 .md .tituloSeccion{
     text-align: left;

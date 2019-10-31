@@ -1,9 +1,47 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>sugerencias</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header></app-header>
+<app-navigation-header titulo="Sugerencias"></app-navigation-header>
 
-<ion-content>
+<ion-content class="ion-padding">
+    <p class="nota">Elija una sugerencia y agregue un comentario con respecto a su sugerencia</p>
 
+    <ion-list class="ion-padding-horizontal">
+
+      <ion-item color="tertiary" multiple="false">
+        <ion-label class="whiteSpace">Dudas sobre servicios, contacto y atención especializada.</ion-label>
+        <ion-checkbox color="success" slot="start" value="servicios"></ion-checkbox>
+      </ion-item>
+
+      <ion-item color="tertiary" multiple="false">
+        <ion-label class="whiteSpace">Dudas sobre el catálogo de productos publicados.</ion-label>
+        <ion-checkbox color="success" slot="start" value="catalogo"></ion-checkbox>
+      </ion-item>
+
+      <ion-item color="tertiary" multiple="false">
+        <ion-label class="whiteSpace">Orientación sobre la infromación médica publicada.</ion-label>
+        <ion-checkbox color="success" slot="start" value="informacion"></ion-checkbox>
+      </ion-item>
+
+      <ion-item color="tertiary" multiple="false">
+        <ion-label class="whiteSpace">Orientación respecto al funcionamiento de la aplicación.</ion-label>
+        <ion-checkbox color="success" slot="start" value="funcionamiento"></ion-checkbox>
+      </ion-item>
+
+      <ion-item color="tertiary" multiple="false">
+        <ion-label class="whiteSpace">Dudas sobre la falta de algún medicamento en la publicación.</ion-label>
+        <ion-checkbox color="success" slot="start" value="medicamento"></ion-checkbox>
+      </ion-item>
+
+      <ion-item color="light">
+        <ion-textarea placeholder="Ingrese aquí su comentario..."></ion-textarea>
+      </ion-item>
+
+      <ion-item color="tertiary"  lines="none">
+        <ion-button class="btnFormulario"
+        color="secondary" 
+        expand="block"
+        size="small"
+        mode="ios">Enviar</ion-button>
+      </ion-item>
+  
+    </ion-list>
 </ion-content>
